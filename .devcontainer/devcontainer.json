@@ -1,0 +1,17 @@
+{
+	"name": "QMK Firmware Dev Container",
+	"dockerFile": "Dockerfile",
+	"customizations": {
+		"vscode": {
+			"settings": {
+				"terminal.integrated.shell.linux": "/bin/bash"
+			},
+			"extensions": [
+				"ms-python.python",
+				"ms-vscode.cpptools",
+				"twxs.cmake"
+			]
+		}
+	},
+	"postCreateCommand": "qmk setup -y && qmk doctor"
+}
